@@ -8,7 +8,7 @@ function App() {
         My first react app
       </h1>
       <p>Welcome</p>
-      <Ninjas />
+      <Ninjas name="Ryu" age="25" belt="black"/>
     </div>
   );
 }
