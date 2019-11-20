@@ -15,8 +15,9 @@ class AddNinja extends Component {
 
         handleSubmit = (e) => {
             e.preventDefault();//stopping the form from submitting
+            this.props.addNinja(this.state);
 
-            console.log(this.state);
+        
         }
 
 

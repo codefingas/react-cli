@@ -5,7 +5,7 @@ const Ninjas = (prop) => {//in functional components have to be explicitly Refer
         const {ninjas} = prop,
                 ninjaList = ninjas.map(ninja => {
                     //using tenary operator to 
-                   return ninja.age > 20 ? (
+                   return ninja.age > 0 ? (
                         <div className="ninja" key={ninja.id}>
                             <div>Name : {ninja.name}</div>
                                 <div>Age : {ninja.age}</div>
@@ -13,20 +13,6 @@ const Ninjas = (prop) => {//in functional components have to be explicitly Refer
                         </div>
                    ) : null;
                 })
-
-            // ninjaList = ninjas.map(ninja => {
-            //     if (ninja.age > 20) {
-            //         return (
-            //             <div className="ninja" key={ninja.id}>
-                                {/* <div>Name : {ninja.name}</div>
-                                    <div>Age : {ninja.age}</div>
-                                    <div>Belt : {ninja.belt}</div>
-                            </div> */}
-            //         )
-            //     } else {
-            //         return null
-            //     }
-            // });
 
 
 
