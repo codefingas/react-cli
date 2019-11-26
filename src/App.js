@@ -3,6 +3,7 @@ import Ninjas from './ninjas';
 import AddNinja from './AddNinja';
 import Clock from './clock';
 import Greeting from './conditional-render';
+import FancyBorder from './fancyBorder';
 
 let {Component} = React;
 
@@ -35,6 +36,14 @@ class App extends Component {
         <AddNinja addNinja={this.addNinja}/>
         <Clock date={new Date()}/>
         <Greeting isLoggedIn={false}/>
+        <FancyBorder color="blue">
+            <h1 className="Dialog-title">
+              Welcome
+            </h1>
+            <p className="Dialog-message">
+              Thank you for visiting our spacecraft!
+            </p>
+      </FancyBorder>
       </div>
     )
   }
